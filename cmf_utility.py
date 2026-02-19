@@ -2,8 +2,8 @@ import numpy as np
 from scipy.optimize import minimize
 
 # Run on import to avoid repeated loading time
-Mg_coeffs = np.loadtxt("Fe2Mg_coeffs.txt")
-Si_coeffs = np.loadtxt("Fe2Si_coeffs.txt")
+Mg_coeffs = np.loadtxt("params/Fe2Mg_coeffs.txt")
+Si_coeffs = np.loadtxt("params/Fe2Si_coeffs.txt")
 
 def f_cmf(M,R,si=0,fe=0.1):
     '''
